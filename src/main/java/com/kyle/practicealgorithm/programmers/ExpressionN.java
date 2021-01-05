@@ -33,7 +33,7 @@ public class ExpressionN {
         return -1;
     }
 
-    //sample또한 맞지 않다. 내일 수정을 해보자
+    //sample또한 맞지 않다. 내일 수정을 해보
     public static int sampleAnswer(int n, int num) {
         int ans = 0;
         ArrayList <HashSet<Integer>> list = new ArrayList<>();
@@ -69,5 +69,6 @@ public class ExpressionN {
 
         return (ans >= 8) ? -1 : ans + 1;
     }
+
 
 }
