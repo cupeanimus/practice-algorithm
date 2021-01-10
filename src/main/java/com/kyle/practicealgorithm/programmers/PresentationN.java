@@ -40,7 +40,7 @@ public class PresentationN {
     public static void main(String[] args) {
 
         int n = 5;
-        int number = 5555;
+        int number = 39;
         solution(n,number);
         System.out.println(answer);
     }

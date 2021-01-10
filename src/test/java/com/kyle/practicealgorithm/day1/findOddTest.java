@@ -1,8 +1,9 @@
 package com.kyle.practicealgorithm.day1;
 
 
+import ch.qos.logback.core.joran.spi.NoAutoStart;
 import org.junit.jupiter.api.Test;
-import org.springframework.beans.factory.annotation.Autowired;
+
 
 import java.util.List;
 import java.util.TreeSet;
@@ -12,8 +13,8 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class findOddTest {
 
-    @Autowired
-    FindOdd findOdd;
+
+
 
     @Test
     public void test(){
