@@ -29,9 +29,13 @@ public class MoreSpicy {
 //
 //    모든 음식의 스코빌 지수가 7 이상이 되었고 이때 섞은 횟수는 2회입니다.
 
+
+    //-1을 리턴하는 경우가 있나? 조건을 추가해야할 필요가 있을까??
+
     class Solution {
         public int solution(int[] scoville, int K) {
             int answer = 0;
+
             return answer;
         }
     }
