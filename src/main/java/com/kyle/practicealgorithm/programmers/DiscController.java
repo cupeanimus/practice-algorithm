@@ -27,7 +27,6 @@ public class DiscController {
         LinkedList<Job> listJob = new LinkedList<>();
 
         //요청시간 오름차순 정렬
-        Arrays.sort(jobs, ((o1, o2) -> o1[0] - o2[0]));
 
         //queue에 담기위해 객체화 한다. int[][]로 만든 다음 솔팅이 가능하다면 이 작업이 필요없겠지만 시도해봤으나 먼 길을 가는 것 같아 객체화 하였다.
         for (int[] job : jobs) {
