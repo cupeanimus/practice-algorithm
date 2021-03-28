@@ -47,6 +47,8 @@ public class WordConversion {
 
 
     public static void main(String[] args) {
+        String[] words = new String[]{"hot", "dot", "dog", "lot", "log", "cog"};
+        solution("hit","cog",words);
 
     }
 }
