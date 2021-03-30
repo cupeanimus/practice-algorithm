@@ -1,11 +1,9 @@
-package com.kyle.practicealgorithm.day1;
+package com.kyle.practicealgorithm.other;
 
 
-import ch.qos.logback.core.joran.spi.NoAutoStart;
 import org.junit.jupiter.api.Test;
 
 
-import java.util.List;
 import java.util.TreeSet;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;

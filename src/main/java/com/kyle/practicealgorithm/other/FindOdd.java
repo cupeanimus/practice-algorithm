@@ -1,4 +1,4 @@
-package com.kyle.practicealgorithm.day1;
+package com.kyle.practicealgorithm.other;
 
 import java.util.TreeSet;
 
