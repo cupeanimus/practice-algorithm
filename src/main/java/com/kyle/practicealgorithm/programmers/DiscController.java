@@ -62,7 +62,7 @@ public class DiscController {
     }
 
     public static void main(String[] args) {
-        int[][] jobs = {{0, 3}, {1, 9}, {2, 6}};
+        int[][] jobs = {{0, 10}, {1, 9}, {2, 6}};
         int answer = solution(jobs);
         System.out.println(answer == 9);
 
