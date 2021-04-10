@@ -37,6 +37,9 @@ public class IntegerTriangle {
 
     //다른 풀이
     public static int solution2(int[][] triangle) {
+        //각 끝 부분을 미리 넣고, 중간 값을 채워 나간다.
+        //기존 값에 합으로 덮어 씌워 나간다.
+        //보기를 바로 덮어 쓰는 것은.... 알고리즘 문제로 봐선 더 효율적으로 보인다.
         for (int i = 1; i < triangle.length; i++) {
             triangle[i][0] += triangle[i - 1][0];
             triangle[i][i] += triangle[i - 1][i - 1];
@@ -44,7 +47,7 @@ public class IntegerTriangle {
                 triangle[i][j] += Math.max(triangle[i - 1][j - 1], triangle[i - 1][j]);
         }
 
-        //stream을 통한 최대값
+        //stream을 통한 최대
         return Arrays.stream(triangle[triangle.length - 1]).max().getAsInt();
     }
 
