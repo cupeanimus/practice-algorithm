@@ -6,6 +6,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import java.util.stream.Collectors;
 
 class PracticeAlgorithmApplicationTests {
 
@@ -44,6 +45,15 @@ class PracticeAlgorithmApplicationTests {
         Long b = 23l;
         System.out.println(a >= b);
 
+    }
+
+    @Test
+    void convertToListTest(){
+        int[] nums = new int[]{2, 7, 11, 15};
+        List<Integer> numList = Arrays.stream(nums).boxed().collect(Collectors.toList());
+        for (Integer integer : numList) {
+            System.out.println(integer);
+        }
     }
 
 }
