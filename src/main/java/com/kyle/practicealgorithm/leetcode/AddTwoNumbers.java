@@ -20,6 +20,10 @@ public class AddTwoNumbers {
         }
     }
 
+/*    shallow copy를 통해 노드가 완성되는 이유와 두 노드를 사용해야하는 이유는
+    처음 기록될 노드에 주소를 복사하고
+    다음 노드 값 등록후 노드 주소를 초기화하기 때문에 기준 노드는 그대로 유지되면서
+    복사한 다음 노드들이 계속 추가되는 것이다.*/
     public static ListNode addTwoNumbers(ListNode l1, ListNode l2) {
         ListNode node = new ListNode();
         ListNode answer = node;
