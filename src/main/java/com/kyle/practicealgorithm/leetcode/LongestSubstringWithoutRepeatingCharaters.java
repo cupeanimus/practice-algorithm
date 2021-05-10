@@ -48,6 +48,27 @@ public class LongestSubstringWithoutRepeatingCharaters {
         return max;
     }
 
+    //better solution
+    public int lengthOfLongestSubstring3(String s) {
+        Set<Character> subString = new HashSet<Character>();
+        int max = 0;
+        int i = 0;
+        int j = 0;
+        while (j < s.length()) {
+            char c = s.charAt(j++);
+            if (subString.add(c)) {
+                if (max < j - i) max = j - i;
+            }
+            else {
+                while (!subString.add(c)) {
+                    subString.remove(s.charAt(i++));
+                }
+            }
+        }
+
+        return max;
+    }
+
 
     public static void main(String[] args) {
         String s1 = "abcabcbb";
