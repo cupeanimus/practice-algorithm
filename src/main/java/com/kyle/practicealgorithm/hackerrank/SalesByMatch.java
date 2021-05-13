@@ -44,7 +44,7 @@ public class SalesByMatch {
         return pairs;
     }
 
-    //remove 영향인지 map을 이용한 내 풀이가 더 빠르다.
+    //remove 영향인지 map을 이용한 내 풀이가 50%정도 더 빠르다.
     public static void main(String[] args) {
 
         int n = 214748364;
