@@ -24,6 +24,7 @@ public class ReverseSentences {
             for(int i = lastIndex-1; i >= 0; i--) {
                 reversedSentence.append(" ").append(arryedSentence[i]);
             }
+            String a = new String(reversedSentence);
             System.out.println(reversedSentence);
         }
     }
