@@ -20,6 +20,15 @@ public class findOddTest {
         }
     }
 
+    @Test
+    void sqrtTest() {
+        int a = 25;
+        int b = 17;
+
+        System.out.println(Math.sqrt(a));
+        System.out.println(Math.sqrt(b));
+    }
+
 
 
     @Test
