@@ -90,4 +90,51 @@ public class FindPrimeNumber {
         System.out.println(solution("011") == 2);
     }
 
+
+    //순열 알고리즘
+    //1. Swap 함수를 이용해 구현 - 순서 없이 n 개중에서 r 개를 뽑는 경우
+    static void per1(int[] arr, int depth, int n, int r) {
+        if (depth == r) {
+            print(arr, r);
+            return;
+        }
+
+        for (int i = depth; i < n; i++) {
+            swap(arr, depth, i);
+            per1(arr, depth + 1, n, r);
+            swap(arr, depth, i);
+        }
+    }
+
+    static void swap(int[] arr, int depth, int i) { //두 배열의 값을 바꾸는 Swap 함수
+        int temp = arr[depth];
+        arr[depth] = arr[i];
+        arr[i] = temp;
+    }
+
+    //2. DFS를 이용해 구현  - 순서를 지키면서 n 개중에서 r 개를 뽑는 경우
+    static void per2(int[] arr, int[] output, boolean[] visited, int depth, int n, int r) {
+        if (depth == r) {
+            print(output, r); //순열 출력을 위한 print 함수
+            return;
+        }
+
+        for (int i = 0; i < n; i++) {
+            if (visited[i] != true) {
+                visited[i] = true;
+                output[depth] = arr[i];
+                per2(arr, output, visited, depth + 1, n, r);
+                visited[i] = false;
+            }
+        }
+    }
+
+    // 배열 출력
+    static void print(int[] arr, int r) {
+        for (int i = 0; i < r; i++)
+            System.out.print(arr[i] + " ");
+        System.out.println();
+    }
+
+
 }
